@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Open+Sans:wght@600&family=PT+Sans:ital,wght@0,700;1,400;1,700&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+:root {
+    /* quand un hexade comporte 6 fois le méme caractéres, on peut en mettre que 3 */
+    --black: #000;
+    --white:   #ffffff;
+    --white-opacity-85: rgba(255, 255, 255, 0.85);
+    --gray: rgb(128, 128, 128);
+    --gray-light: #cbcbcb;
+}
+
+body {
+    font-family: 'nunito', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    height: 100vh;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}    
+main section {
+    width: 50%;
+}
+/***
+*colonne de droite
+*/
+.presentation {
+    background: url('imgs/women_book.jpg') center no-repeat;
+    background-size: cover;
+    height: 100%;
+
+    /* astuce 1 */
+    /*position: relative; */
+
+    /* astuce 2 */
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+
+}
+
+.presentation div {
+    background-color: var(--white-opacity-85);
+    width: 65%;
+    border-radius: 6px;
+    font-size:  1.5rem;
+    padding: 20px;
+
+    /* astuce 1 */
+    /*position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);*/
+    
+    /* astuce 2 */
+    margin-bottom: 50px;
+}
+
+/**
+* formulaire
+*/
+.signin form { 
+    width: 50%;
+    margin: auto;
+}
+
+.signin form h1 {
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+.signin form p {
+    color: var(--gray);
+    margin:0 0 32px 0; /* haut, droite, bas et gauche */
+}
+
+
+.signin form label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.signin form input {
+    display: block;
+    border:1px solid var(--gray-light);
+    border-radius: 4px;
+    padding:12px; /*12px de marges intérieur sur les 4 cotés */
+    margin-bottom: 16px;
+    width: 100%;
+
+
+}
+
+.signin form button {
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 12px 0;
+    border: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    width: 100%
+
+}
+
+.signin form a {
+    border: 1px solid var(--gray-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 0.9rem;
+    gap: 10px;
+    padding: 10px 0;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+
+.dignin form a img {
+    width: 5%;
+}
+
+
+
+
+
+
+
+
